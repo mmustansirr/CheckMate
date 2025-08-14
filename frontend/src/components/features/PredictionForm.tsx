@@ -150,7 +150,7 @@ export function PredictionForm() {
               Fact-Check Your News
             </CardTitle>
             <CardDescription className="text-lg text-gray-600">
-              Enter a news headline to check if it's real or fake using AI
+              Enter a news headline to check if it&apos;s real or fake using AI
             </CardDescription>
           </CardHeader>
           <CardContent>

@@ -80,7 +80,7 @@ export function HeroSection() {
               { number: '95%', label: 'Accuracy Rate' },
               { number: '<1s', label: 'Response Time' },
               { number: '24/7', label: 'Available' },
-            ].map((stat, index) => (
+            ].map((stat) => (
               <motion.div
                 key={stat.label}
                 className="text-center"

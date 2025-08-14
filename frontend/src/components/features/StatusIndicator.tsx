@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CheckCircle, AlertTriangle, Wifi, WifiOff } from 'lucide-react';
+import { CheckCircle, Wifi, WifiOff } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { useHealthCheck } from '@/hooks/usePrediction';
 
@@ -16,7 +16,7 @@ export function StatusIndicator() {
     return { status: 'online', color: 'green', icon: CheckCircle };
   };
 
-  const { status, color, icon: Icon } = getStatus();
+  const { status, icon: Icon } = getStatus();
 
   const statusConfig: Record<StatusType, { text: string; bgColor: string; textColor: string }> = {
     online: { text: 'API Online', bgColor: 'bg-green-100', textColor: 'text-green-800' },
