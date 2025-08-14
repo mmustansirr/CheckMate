@@ -7,6 +7,6 @@ services:
     plan: free
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.0
+        value: 3.11.9
       - key: ALLOWED_ORIGINS
         value: https://your-frontend-domain.vercel.app,http://localhost:3000
