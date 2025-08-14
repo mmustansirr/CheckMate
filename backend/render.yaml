@@ -2,11 +2,11 @@ services:
   - type: web
     name: checkmate-api
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: chmod +x build.sh && ./build.sh
     startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
     plan: free
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.9
+        value: 3.11.7
       - key: ALLOWED_ORIGINS
         value: https://your-frontend-domain.vercel.app,http://localhost:3000
